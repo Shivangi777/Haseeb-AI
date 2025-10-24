@@ -19,11 +19,13 @@ const Index = () => {
         </section>
         <SocialProof />
         <LeadCapture />
-        <section id="features">
+        <section id="modes">
           <Benefits />
         </section>
-        <Pricing />
-        <section id="testimonials">
+        <section id="pricing">
+          <Pricing />
+        </section>
+        <section id="declarations">
           <Testimonials />
         </section>
         <section id="faq">

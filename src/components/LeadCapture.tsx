@@ -13,15 +13,16 @@ const LeadCapture = () => {
             Check Your CFO Health Score — Free in 2 Minutes
           </h3>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Uncover cash‑flow risks, reporting gaps, and quick wins. No signup. No card. Instant results.
+          Uncover cash‑flow risks, reporting gaps, and quick wins. 
           </p>
 
           {!submitted ? (
             <div className="space-y-6">
               <ul className="flex flex-col sm:flex-row justify-center gap-3 text-sm text-muted-foreground">
-                <li className="px-3 py-1 bg-card border-3 border-foreground" style={{ borderRadius: "14px 4px 14px 4px" }}>Free CFO Health Check</li>
-                <li className="px-3 py-1 bg-card border-3 border-foreground" style={{ borderRadius: "4px 14px 4px 14px" }}>Actionable next steps</li>
-                <li className="px-3 py-1 bg-card border-3 border-foreground" style={{ borderRadius: "14px 4px 14px 4px" }}>Takes ~2 minutes</li>
+                <li className="px-3 py-1 bg-card border-3 border-foreground" style={{ borderRadius: "14px 4px 14px 4px" }}>Instant insight.</li>
+                <li className="px-3 py-1 bg-card border-3 border-foreground" style={{ borderRadius: "4px 14px 4px 14px" }}>Actionable results immediately.</li>
+                <li className="px-3 py-1 bg-card border-3 border-foreground" style={{ borderRadius: "14px 4px 14px 4px" }}>Takes under two minutes.
+                </li>
               </ul>
               <div className="flex justify-center">
                 <a href="https://reality-check-sigma.vercel.app/" target="_blank" rel="noopener noreferrer">
@@ -30,7 +31,8 @@ const LeadCapture = () => {
                   </Button>
                 </a>
               </div>
-              <div className="text-sm text-muted-foreground"> Secure • ★★★★★ 4.9 from 120+ teams</div>
+              <div className="text-sm text-muted-foreground"> Secure • ★★★★★ Rated 4.9 by 120+ founder teams
+              </div>
             </div>
           ) : (
             <div className="p-6 bg-card border-3 border-foreground max-w-xl mx-auto" style={{ borderRadius: "25px 5px 25px 5px" }}>

@@ -7,24 +7,24 @@ import {
 
 const faqs = [
   {
-    question: "How accurate is the AI accounting?",
-    answer: "Our AI is trained on millions of transactions and maintains 99.9% accuracy. Every calculation is verified and you can always review the details.",
+    question: "How accurate is the system?",
+    answer: "Our Directed Intelligence system maintains 99.9% accuracy at scale. Thats the power of AI+Human expertise",
   },
   {
-    question: "Is my financial data secure?",
-    answer: "Absolutely. We use bank-level encryption (AES-256) and comply with all major financial regulations including SOC 2 Type II and GDPR.",
+    question: "Is my data secure?",
+    answer: "Yes. All financial information is encrypted with AES-256 and aligned with SOC 2 Type II and GDPR standards.",
   },
   {
-    question: "Can I integrate with my existing tools?",
-    answer: "Yes! We integrate seamlessly with QuickBooks, Xero, Stripe, PayPal, and over 50+ other platforms you already use.",
+    question: "Can it connect to my tools?",
+    answer: "Seamless integration with Xero, QuickBooks, Stripe, PayPal, and over fifty tools founders already use.",
   },
   {
-    question: "What if I need human support?",
-    answer: "Our expert team is available 24/7 via chat, email, or phone. Plus, you can schedule consultations with real accountants anytime.",
+    question: "What if I need human input?",
+    answer: "You always have human backup. Accountant support is available anytime for review or strategic guidance. For Bot Mode, you can upgrade anytime.",
   },
   {
-    question: "How long does setup take?",
-    answer: "Most businesses are fully set up in under 15 minutes. Our AI guides you through everything step-by-step.",
+    question: "How fast is setup?",
+    answer: "Most founders complete setup within fifteen minutes. The crew guides each step automatically.",
   },
 ];
 
@@ -37,7 +37,7 @@ const FAQ = () => {
             Frequently Asked Questions
           </h2>
           <p className="text-xl text-muted-foreground">
-            Everything you need to know about Haseeb AI
+            Everything you need to understand Directed Intelligence.
           </p>
         </div>
 

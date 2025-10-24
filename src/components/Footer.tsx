@@ -9,8 +9,8 @@ const Footer = () => {
           <div className="space-y-4">
             <h3 className="text-2xl font-black">Haseeb AI</h3>
             <p className="text-sm text-muted-foreground leading-relaxed">
-              Smart accounting powered by artificial intelligence. 
-              Save time, reduce costs, grow faster.
+              Directed Intelligence for modern accounting. 
+              Gain clarity, cut waste, grow stronger.
             </p>
           </div>
 

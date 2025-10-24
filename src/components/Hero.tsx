@@ -13,14 +13,14 @@ const Hero = () => {
             {/* Headline */}
             <div className="relative">
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-black leading-tight">
-                Your Smart
-                <span className="block text-accent">AI Accountant</span>
+              Directed Intelligence
+                <span className="block text-accent">Accounting System</span>
               </h1>
             </div>
 
             {/* Subheadline */}
             <p className="text-xl md:text-2xl text-muted-foreground max-w-xl mx-auto lg:mx-0">
-              Say goodbye to spreadsheets. Get accurate financial insights in seconds with AI.
+            Choose Your Mode of Financial Operations. Every founder operates in one of three modes. The mode you choose defines your leverage.
             </p>
 
             {/* Buttons + Info */}
@@ -30,6 +30,7 @@ const Hero = () => {
                   size="lg"
                   className="bg-accent hover:bg-accent/90 text-accent-foreground shadow-lg hover:shadow-xl transition-all group border-2 border-foreground hover:translate-x-1 hover:-translate-y-1"
                   style={{ borderRadius: "20px 5px 20px 5px" }}
+                  onClick={() => window.open('https://reality-check-sigma.vercel.app', '_blank')}
                 >
                   Start Free Trial
                   <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
@@ -47,7 +48,8 @@ const Hero = () => {
 
               {/* Info line centered under buttons */}
               <div className="pt-2 text-sm text-muted-foreground text-center">
-                <span className="font-semibold">No credit card required</span> • Free 14-day trial • Cancel anytime
+                <span className="font-semibold">14-day guided setup </span> • No risk • Cancel anytime instantly
+
               </div>
             </div>
           </div>

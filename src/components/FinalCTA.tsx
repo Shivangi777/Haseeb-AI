@@ -17,12 +17,11 @@ const FinalCTA = () => {
           </div>
 
           <h2 className="text-4xl md:text-6xl font-black leading-tight animate-scale-in">
-            Start Your Free Trial Today
+            Begin Your Clarity Journey Today
           </h2>
           
           <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto">
-            Join 10,000+ businesses transforming their accounting with AI. 
-            No credit card required.
+            Join founders using Directed Intelligence to stay ahead.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
@@ -30,8 +29,9 @@ const FinalCTA = () => {
               size="lg" 
               className="bg-accent hover:bg-accent/90 text-accent-foreground shadow-xl hover:shadow-2xl transition-all group text-lg px-8 border-2 border-foreground hover:translate-x-1 hover:-translate-y-1"
               style={{ borderRadius: "20px 5px 20px 5px" }}
+              onClick={() => window.open('https://reality-check-sigma.vercel.app', '_blank')}
             >
-              Get Started Free
+              Begin Your Clarity Journey Today
               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
             </Button>
             <Button 
@@ -49,23 +49,19 @@ const FinalCTA = () => {
               <svg className="h-5 w-5 text-accent" fill="currentColor" viewBox="0 0 20 20">
                 <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
               </svg>
-              <span>14-day free trial</span>
+              <span>14-day guided setup</span>
             </div>
             <div className="flex items-center gap-2">
               <svg className="h-5 w-5 text-accent" fill="currentColor" viewBox="0 0 20 20">
                 <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
               </svg>
-              <span>No credit card required</span>
+              <span>No risk</span>
             </div>
             <div className="flex items-center gap-2">
               <svg className="h-5 w-5 text-accent" fill="currentColor" viewBox="0 0 20 20">
                 <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
               </svg>
-              <span>Cancel anytime</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <span className="text-accent">★★★★★</span>
-              <span>4.9 from 120+ teams</span>
+              <span>Cancel anytime instantly</span>
             </div>
           </div>
         </div>

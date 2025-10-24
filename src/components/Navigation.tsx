@@ -2,6 +2,16 @@ import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 
+const scrollToSection = (sectionId: string) => {
+  const element = document.getElementById(sectionId);
+  if (element) {
+    element.scrollIntoView({ 
+      behavior: 'smooth',
+      block: 'start'
+    });
+  }
+};
+
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -18,15 +28,39 @@ const Navigation = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
-            <a href="#features" className="text-sm font-medium hover:text-accent transition-all duration-300 hover:scale-110">Features</a>
-            <a href="#pricing" className="text-sm font-medium hover:text-accent transition-all duration-300 hover:scale-110">Pricing</a>
-            <a href="#testimonials" className="text-sm font-medium hover:text-accent transition-all duration-300 hover:scale-110">Testimonials</a>
-            <a href="#faq" className="text-sm font-medium hover:text-accent transition-all duration-300 hover:scale-110">FAQ</a>
+            <button 
+              onClick={() => scrollToSection('modes')} 
+              className="text-sm font-medium hover:text-accent transition-all duration-300 hover:scale-110"
+            >
+              Modes
+            </button>
+            <button 
+              onClick={() => scrollToSection('pricing')} 
+              className="text-sm font-medium hover:text-accent transition-all duration-300 hover:scale-110"
+            >
+              Pricing
+            </button>
+            <button 
+              onClick={() => scrollToSection('declarations')} 
+              className="text-sm font-medium hover:text-accent transition-all duration-300 hover:scale-110"
+            >
+              Declarations
+            </button>
+            <button 
+              onClick={() => scrollToSection('faq')} 
+              className="text-sm font-medium hover:text-accent transition-all duration-300 hover:scale-110"
+            >
+              FAQ
+            </button>
           </div>
 
           {/* CTA Button */}
           <div className="hidden md:flex items-center">
-            <Button size="sm" className="bg-accent hover:bg-accent/90 text-accent-foreground">
+            <Button 
+              size="sm" 
+              className="bg-accent hover:bg-accent/90 text-accent-foreground"
+              onClick={() => window.open('https://reality-check-sigma.vercel.app', '_blank')}
+            >
               Start Free Trial
             </Button>
           </div>
@@ -48,36 +82,47 @@ const Navigation = () => {
         {/* Mobile Menu */}
         {isOpen && (
           <div className="md:hidden py-4 space-y-4 border-t border-border">
-            <a 
-              href="#features" 
-              className="block py-2 text-sm font-medium hover:text-accent transition-colors"
-              onClick={() => setIsOpen(false)}
+            <button 
+              onClick={() => {
+                scrollToSection('modes');
+                setIsOpen(false);
+              }}
+              className="block py-2 text-sm font-medium hover:text-accent transition-colors w-full text-left"
             >
-              Features
-            </a>
-            <a 
-              href="#pricing" 
-              className="block py-2 text-sm font-medium hover:text-accent transition-colors"
-              onClick={() => setIsOpen(false)}
+              Modes
+            </button>
+            <button 
+              onClick={() => {
+                scrollToSection('pricing');
+                setIsOpen(false);
+              }}
+              className="block py-2 text-sm font-medium hover:text-accent transition-colors w-full text-left"
             >
               Pricing
-            </a>
-            <a 
-              href="#testimonials" 
-              className="block py-2 text-sm font-medium hover:text-accent transition-colors"
-              onClick={() => setIsOpen(false)}
+            </button>
+            <button 
+              onClick={() => {
+                scrollToSection('declarations');
+                setIsOpen(false);
+              }}
+              className="block py-2 text-sm font-medium hover:text-accent transition-colors w-full text-left"
             >
-              Testimonials
-            </a>
-            <a 
-              href="#faq" 
-              className="block py-2 text-sm font-medium hover:text-accent transition-colors"
-              onClick={() => setIsOpen(false)}
+              Declarations
+            </button>
+            <button 
+              onClick={() => {
+                scrollToSection('faq');
+                setIsOpen(false);
+              }}
+              className="block py-2 text-sm font-medium hover:text-accent transition-colors w-full text-left"
             >
               FAQ
-            </a>
+            </button>
             <div className="pt-4">
-              <Button className="w-full bg-accent hover:bg-accent/90 text-accent-foreground">
+              <Button 
+                className="w-full bg-accent hover:bg-accent/90 text-accent-foreground"
+                onClick={() => window.open('https://reality-check-sigma.vercel.app', '_blank')}
+              >
                 Start Free Trial
               </Button>
             </div>
